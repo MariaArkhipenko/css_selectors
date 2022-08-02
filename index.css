@@ -1,0 +1,72 @@
+/* 1 готово*/
+
+h1:hover {
+  color: red;
+}
+
+/* 2 */
+input:first-of-type {
+  border: 1px solid yellowgreen;
+}
+
+/* 3 готово*/
+a:visited {
+  color: lightgrey;
+}
+
+/* 4 готово*/
+input:disabled {
+  background-color: coral;
+}
+
+/* 5 */
+input:focus:nth-of-type(3){
+  background-color: cyan;
+}
+
+/* 6 готово*/
+input:checked {
+  width: 30px;
+  height: 30px;
+}
+
+.parent,
+.parent1 {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.child,
+.child1 {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.inner,
+.inner1 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+/* 7 готово*/
+.child {
+  border: 3px solid darkorchid;
+}
+
+/* 8 готово*/
+.child1, .inner1 {
+  border: 3px solid darkorchid;
+}
+
+/* 9 готово*/
+h2 + p {
+  color: forestgreen;
+}
+
+/* 10 готово*/
+.title1 ~ p {
+  color: fuchsia;
+}
