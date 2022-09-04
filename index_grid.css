@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  color: aliceblue;
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+}
+
+.grit-container {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: minmax(100%, 1200px);
+  grid-template-rows: max-content 1fr max-content;
+  grid-template-areas: 'header' 'main' 'footer'; 
+}
+
+.header {
+  background-color: darkseagreen;
+  grid-area: header;
+  display: grid;
+  padding-bottom: 20px;
+  grid-template-columns: minmax(100%, 1200px);
+  grid-template-rows: repeat(2, max-content);
+  grid-template-areas: 'header_title' 'nav__list'; 
+}
+
+.header_title {
+  grid-area: header_title;
+}
+
+.nav__list {
+  grid-area: nav__list;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: auto;
+  grid-row-gap: 5px;
+}
+
+.nav__item {
+  display: grid;
+  justify-content: space-evenly;
+}
+
+.button {
+  font-size: 20px;
+  color: rgb(53, 51, 51);
+  border: none;
+  background-color: rgb(244, 244, 244);
+  padding: 10px 15px;
+  border-radius: 22px;
+  text-transform: none;
+  white-space: nowrap
+}
+
+.main {
+  background-color: steelblue;
+  grid-area: main;
+  display: grid;
+  grid-template-columns: minmax(100%, 1200px);
+  grid-template-rows: minmax(max-content, 1fr) minmax(max-content, max-content);
+  grid-template-areas: 'main__title' 'main__container'; 
+}
+
+.main__title {
+  grid-area: main__title;
+  margin-bottom: 20px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.main__container {
+  grid-area: main__container;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 20px;
+  padding: 40px 20px;
+}
+
+.main__item {
+  background-color: rgb(51, 51, 182);
+  display: grid;
+  align-items: center;
+}
+
+.main__item:nth-of-type(3) {
+  grid-area: 1 / 3 / 3 / 5;
+}
+
+.main__item:nth-of-type(6) {
+  grid-area: 3 / 1 / 5 / 3;
+}
+
+.main__item:nth-of-type(9) {
+  grid-area: 4 / 3 / 6 / 5;
+}
+
+.footer {
+  background-color: skyblue;
+  grid-area: footer;
+}
+
